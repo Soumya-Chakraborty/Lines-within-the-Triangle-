@@ -6,15 +6,13 @@
 
 void res(float x1, float y1, float x2, float y2, float x3, float y3,
          float x, float y, float *area, int *flag); 
-         // This is a function prototype for res function that takes the coordinates of the triangle's vertices and the point,
-         // and two pointers to store the area of the triangle and the result of the position check
+         // This is a function prototype for res function that takes the coordinates of the triangle's vertices and the point, and two pointers to store the area of the triangle and the result of the position check
 float distance(float x1, float y1, float x2, float y2);
 // This is a function prototype for distance function that takes the coordinates of two points and returns their distance
 float cal_area(float a, float b, float c);
 // This is a function prototype for cal_area function that takes the three sides of a triangle and returns its area
 int position(float area, float A, float B, float C);
-// This is a function prototype for position function that takes the area of the triangle and the areas of three sub-triangles
-// and returns 1 if the point is inside or on the edge of the triangle and 0 otherwise
+// This is a function prototype for position function that takes the area of the triangle and the areas of three sub-triangles and returns 1 if the point is inside or on the edge of the triangle and 0 otherwise
 
 void main() //The main function of the program.
 {
@@ -52,9 +50,7 @@ void main() //The main function of the program.
 }
 void res(float x1, float y1, float x2, float y2, float x3, float y3,
          float x, float y, float *area, int *flag)
-         //The res() function takes the coordinates of the three points and the point to be checked as input and 
-         //calculates the area of the triangle formed by the three given points and checks whether the given point
-         //lies inside or outside the triangle.
+         //The res() function takes the coordinates of the three points and the point to be checked as input and calculates the area of the triangle formed by the three given points and checks whether the given point lies inside or outside the triangle.
 {
     float a, b, c, d, e, f, A, B, C ;
     //Declaration of variables used in the res() function.
