@@ -1,4 +1,4 @@
-# Lines-within-the-Triangle-
+//The below code is ©Soumya_Chakraborty
 //Question: Write a function to compute the distance between two points and use it to develop another function that will compute the area of the triangle whose vertices are A(x1,y1), B(x2, y2), and C(x3, y3). Use these functions to develop a function which returns a value 1 if the point (x, y) lines inside the triangle ABC, otherwise a value 0
 #include<stdio.h>
 #include<math.h>
@@ -108,3 +108,4 @@ int position(float area, float A, float B, float C)
         return(0); // Return 0 to indicate that the point is outside the triangle
     }
 }
+//The above code is ©Soumya_Chakraborty
