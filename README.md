@@ -1,16 +1,21 @@
 # Write a function to compute the distance between two points and use it to develop another function that will compute the area of the triangle whose vertices are A(x1,y1), B(x2, y2), and C(x3, y3). Use these functions to develop a function which returns a value 1 if the point (x, y) lines inside the triangle ABC, otherwise a value 0
 #include<stdio.h>
+
 #include<math.h>
 
 void res(float x1, float y1, float x2, float y2, float x3, float y3,
          float x, float y, float *area, int *flag); 
          
 float distance(float x1, float y1, float x2, float y2);
+
 float cal_area(float a, float b, float c);
+
 int position(float area, float A, float B, float C);
 
 void main() //The main function of the program.
+
 {
+
     float x1, y1, x2, y2, x3, y3, x, y;
     float area=0;
     int flag=0;
@@ -37,9 +42,12 @@ void main() //The main function of the program.
         printf("\nPoint(%.2f, %.2f) lies outside the triangle.",x,y);
 
 }
+
 void res(float x1, float y1, float x2, float y2, float x3, float y3,
          float x, float y, float *area, int *flag)
+         
 {
+    
     float a, b, c, d, e, f, A, B, C ;
 
     a = distance(x1,y1,x2,y2);
@@ -61,19 +69,25 @@ void res(float x1, float y1, float x2, float y2, float x3, float y3,
 
 float distance(float x1, float y1, float x2, float y2)
 {
+
     return (sqrt(pow((x2-x1),2)+pow((y2-y1),2)));
 }
+
 float cal_area(float a, float b, float c)
+
 {
+
     float S,ar;
 
     S = (a+b+c)/2.0;
 
     ar = (sqrt(S*(S-a)*(S-b)*(S-c)));
 }
+
 int position(float area, float A, float B, float C) 
 
 {
+
     float res;
     res = area-(A+B+C);
 
